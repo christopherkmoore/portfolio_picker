@@ -15,6 +15,7 @@
 		0390015B200C0BB100F419BA /* Portfolio_PickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390015A200C0BB100F419BA /* Portfolio_PickerTests.swift */; };
 		03900166200C0BE000F419BA /* PPQuandlCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03900165200C0BE000F419BA /* PPQuandlCaller.swift */; };
 		03900168200C0C0E00F419BA /* PPQuandlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03900167200C0C0E00F419BA /* PPQuandlConstants.swift */; };
+		0390016C200C35BA00F419BA /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390016B200C35BA00F419BA /* Stock.swift */; };
 		1E6DAB40439F8799AC5A06D8 /* Pods_Portfolio_PickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B9DDB71661A3B0066249E6 /* Pods_Portfolio_PickerTests.framework */; };
 		5D985C084696334473D8D33D /* Pods_Portfolio_Picker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9180A4F51557ACC256CE6C6 /* Pods_Portfolio_Picker.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		0390015C200C0BB100F419BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03900165200C0BE000F419BA /* PPQuandlCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPQuandlCaller.swift; sourceTree = "<group>"; };
 		03900167200C0C0E00F419BA /* PPQuandlConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPQuandlConstants.swift; sourceTree = "<group>"; };
+		0390016B200C35BA00F419BA /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		92B9DDB71661A3B0066249E6 /* Pods_Portfolio_PickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portfolio_PickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B142FA276BC3EF34B401D02 /* Pods-Portfolio Picker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio Picker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Portfolio Picker/Pods-Portfolio Picker.release.xcconfig"; sourceTree = "<group>"; };
 		A76A2EEA0ED4F96D3072B2A6 /* Pods-Portfolio PickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio PickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Portfolio PickerTests/Pods-Portfolio PickerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		03900141200C0BB100F419BA /* Portfolio Picker */ = {
 			isa = PBXGroup;
 			children = (
+				0390016A200C35AF00F419BA /* Models */,
 				03900169200C0C1300F419BA /* Networking */,
 				03900142200C0BB100F419BA /* AppDelegate.swift */,
 				03900144200C0BB100F419BA /* ViewController.swift */,
@@ -122,6 +125,14 @@
 				03900167200C0C0E00F419BA /* PPQuandlConstants.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		0390016A200C35AF00F419BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0390016B200C35BA00F419BA /* Stock.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		51CC5E9BE7E8B1C14ED911F8 /* Pods */ = {
@@ -360,6 +371,7 @@
 				03900168200C0C0E00F419BA /* PPQuandlConstants.swift in Sources */,
 				03900145200C0BB100F419BA /* ViewController.swift in Sources */,
 				03900143200C0BB100F419BA /* AppDelegate.swift in Sources */,
+				0390016C200C35BA00F419BA /* Stock.swift in Sources */,
 				03900166200C0BE000F419BA /* PPQuandlCaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class PPQuandlCaller {
         return URLSession.shared
     }()
     
-    func search(ticker: String, completion: @escaping (Bool, Any?, Error?) -> Void) {
+    func search(ticker: String, completion: @escaping (Bool, AnyObject?, Error?) -> Void) {
         // build URL
         let url = URLKeys.urlBase + URLKeys.datatables + datatables.wiki.rawValue
         
@@ -34,17 +34,18 @@ class PPQuandlCaller {
                 completion(false, nil, error)
                 return
             }
-            var result: Any?
+            var result: AnyObject?
             do {
-                result = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                result = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as AnyObject
             } catch let error {
                 completion(false, nil, error)
             }
-            
             completion(true, result, nil)
+
         }.resume()
     }
     
+
     func package(_ parameters: [String: Any]) -> String {
         var result = ""
         

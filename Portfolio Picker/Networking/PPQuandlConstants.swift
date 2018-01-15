@@ -54,7 +54,8 @@ extension PPQuandlCaller {
     }
     
     enum datatables: String {
-        case wiki = "/WIKI/PRICES?"
+        /* let's just deal with JSON right now */
+        case wiki = "/WIKI/PRICES.json?"
     }
     
 

@@ -10,14 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
+    
     let quandl = PPQuandlCaller()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        quandl.search(ticker: "WFC") { (success, data, error) in
+    }
+    @IBAction func searchStock(_ sender: Any) {
+        guard let text = searchTextField.text else {
+            return
+        }
+        quandl.search(ticker: text) { (success, data, error) in
             if let data = data {
+                let stock = Stock(json: data)
                 print(data)
             }
             
@@ -26,7 +34,9 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
