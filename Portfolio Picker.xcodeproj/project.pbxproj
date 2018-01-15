@@ -10,7 +10,6 @@
 		03900143200C0BB100F419BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03900142200C0BB100F419BA /* AppDelegate.swift */; };
 		03900145200C0BB100F419BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03900144200C0BB100F419BA /* ViewController.swift */; };
 		03900148200C0BB100F419BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03900146200C0BB100F419BA /* Main.storyboard */; };
-		0390014B200C0BB100F419BA /* Portfolio_Picker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03900149200C0BB100F419BA /* Portfolio_Picker.xcdatamodeld */; };
 		0390014D200C0BB100F419BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0390014C200C0BB100F419BA /* Assets.xcassets */; };
 		03900150200C0BB100F419BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0390014E200C0BB100F419BA /* LaunchScreen.storyboard */; };
 		0390015B200C0BB100F419BA /* Portfolio_PickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390015A200C0BB100F419BA /* Portfolio_PickerTests.swift */; };
@@ -358,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0390014B200C0BB100F419BA /* Portfolio_Picker.xcdatamodeld in Sources */,
 				03900168200C0C0E00F419BA /* PPQuandlConstants.swift in Sources */,
 				03900145200C0BB100F419BA /* ViewController.swift in Sources */,
 				03900143200C0BB100F419BA /* AppDelegate.swift in Sources */,
